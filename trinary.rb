@@ -24,5 +24,3 @@ class Trinary
     true
   end
 end
-
-Trinary.new('10').to_decimal
