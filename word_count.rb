@@ -12,6 +12,7 @@ class Phrase
   private
 
   def extract_words
-    @phrase.split(/\s'+|'\s+|[^a-z0-9']+|\r?\n|\r+/);
+    # @phrase.split(/\s'+|'\s+|[^a-z0-9']+|\r?\n|\r+/);
+    @phrase.scan(/\b[\w']+\b/)
   end
 end
